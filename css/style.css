@@ -17,13 +17,12 @@ html{
 
 header{
   position: fixed;
-  top: 3%;
-  left: 40%;
-  width: 100%;
+  top: 5%;
+  right: 3%;
   height: 70px;
-  background-color: #ad1186;
-  text-align: center;
+  z-index: 1000000;
 }
+
 
 header nav ul{
   list-style: none;
@@ -31,19 +30,9 @@ header nav ul{
 
 header nav li{
   display: inline-block;
-  /* line-height: 70px; */
   margin: 5px;
   border-radius: 50%;
   background-color: white;
-}
-
-header nav li a{
-  display: inline-block; 
-  text-decoration: none;
-  font-size: 20px;
-  color: #436BE1;
-  border-radius: 100%;
-  /* line-height: 70px; */
 }
 
 .active{
@@ -55,4 +44,46 @@ header nav li a{
   text-decoration: none;
   width: 100%;
   border-radius: 50%;
+  font-size: 20px;
+}
+
+.active:hover span{
+  text-shadow: 2px 2px gray;
+}
+
+.box{
+  position: relative;
+  height: 100vh;
+}
+
+#uno{
+  background-color: red;
+  color: yellow;
+}
+
+#due{
+  background-color: green;
+  color: yellow;
+}
+
+#tre{
+  background-color: yellow;
+  color: green;
+}
+
+.shoes{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.shoes img{
+  width: 100%;
+}
+
+.shoes span{
+  font-weight: 900;
+  font-size: 250%;
 }
