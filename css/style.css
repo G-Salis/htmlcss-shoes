@@ -2,10 +2,57 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Rubik Mono One', sans-serif;
 }
 
 .clearfix::after{
   content: "";
   display: table;
   clear: both;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+  position: fixed;
+  top: 3%;
+  left: 40%;
+  width: 100%;
+  height: 70px;
+  background-color: #ad1186;
+  text-align: center;
+}
+
+header nav ul{
+  list-style: none;
+}
+
+header nav li{
+  display: inline-block;
+  /* line-height: 70px; */
+  margin: 5px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+header nav li a{
+  display: inline-block; 
+  text-decoration: none;
+  font-size: 20px;
+  color: #436BE1;
+  border-radius: 100%;
+  /* line-height: 70px; */
+}
+
+.active{
+  background: white;
+  color: black;
+  display: block;
+  padding: 15px 19px;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 50%;
 }
