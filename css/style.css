@@ -11,10 +11,12 @@
   clear: both;
 }
 
+/* Effetto scroll quando si utilizza il menù navigazione */
 html{
   scroll-behavior: smooth;
 }
 
+/* Menù navigazione fisso in alto */
 header{
   position: fixed;
   top: 5%;
@@ -28,29 +30,32 @@ header nav ul{
   list-style: none;
 }
 
+/* lista disposta in orizzontale */
 header nav li{
   display: inline-block;
   margin: 5px;
-  border-radius: 50%;
-  background-color: white;
 }
 
+/* caratteristica del bottone di navigazione pagina */
 .active{
   background: white;
   color: black;
   display: block;
   padding: 15px 19px;
-  text-align: center;
   text-decoration: none;
-  width: 100%;
   border-radius: 50%;
   font-size: 20px;
+}
+
+.active:hover{
+  box-shadow: 3px 3px gray;
 }
 
 .active:hover span{
   text-shadow: 2px 2px gray;
 }
 
+/* caratteristiche del box di visualizzazione del modello di scarpe */
 .box{
   position: relative;
   height: 100vh;
@@ -71,19 +76,17 @@ header nav li{
   color: green;
 }
 
+/* per centrare il contenuto nel box */
 .shoes{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  font-size: 250%;
 }
 
 .shoes img{
   width: 100%;
 }
 
-.shoes span{
-  font-weight: 900;
-  font-size: 250%;
-}
