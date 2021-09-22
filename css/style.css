@@ -83,7 +83,7 @@ header nav li{
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 250%;
+  font-size: 3vw;
 }
 
 .shoes img{
